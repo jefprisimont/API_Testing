@@ -16,8 +16,6 @@ Testing is carried out with the following steps:
      - Method: GET
    - Expected Response:
      - Status Code: 200 OK
-   - Test results:
-     - Status Code: 200 OK
      - Response Body:
 ```
      [
@@ -112,8 +110,6 @@ Testing is carried out with the following steps:
 ```
    - Expected Response:
      - Status Code: 201 Created
-   - Test results:
-     - Status Code: 201 Created
      - Response Body:
 ```
        {
@@ -125,5 +121,7 @@ Testing is carried out with the following steps:
        }
 ```
    - Conclusion: Positive testing was successful. New user data has been successfully create with ID.
+
+3. 
 
 
