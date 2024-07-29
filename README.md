@@ -9,7 +9,7 @@ Testing is carried out with the following steps:
 4. Record test results.
 
 ## Positive Testing
-1. GET (list users)
+**1. GET Request**
    - Goal: Get all users based on a valid ID.
    - Request:
      - URL: https://gorest.co.in/public/v2/users
@@ -93,7 +93,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Positive testing was successful. User data has been successfully retrieved based on valid ID.
 
-2. POST
+**2. POST Request**
    - Goal: create a new user with valid data.
    - Request:
      - URL: https://gorest.co.in/public/v2/users
@@ -122,7 +122,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Positive testing was successful. New user data has been successfully create with ID.
 
-3. GET Request
+**3. GET Request**
    - Goal: Get a user based on a valid ID.
    - Request:
      - URL: https://gorest.co.in/public/v2/users/7177340
@@ -142,7 +142,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Positive testing was successful. User data has been successfully retrieved based on ID.
 
-4. PUT Request
+**4. PUT Request**
    - Goal: Update user data on one property
    - Request:
      - URL: https://gorest.co.in/public/v2/users/7177340
@@ -157,9 +157,9 @@ Testing is carried out with the following steps:
         "status": "inactive"
        }
 ```
-    - Expected Response:
-      - Status Code: 200 Ok
-      - Response Body:
+   - Expected Response:
+     - Status Code: 200 Ok
+     - Response Body:
 ```
        {
         "name": "Yani Apexindo",
@@ -171,7 +171,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Positive testing was successful. Update user data has been successfully on one property.
 
-5. PATCH Request
+**5. PATCH Request**
    - Goal: Updated user data on three property
    - Request:
      - URL: https://gorest.co.in/public/v2/users/7177340
@@ -200,7 +200,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Positive testing was successful. Update user data has been successfully on three property.
 
-5. DELETE Request
+**5. DELETE Request**
    - Goal: Delete user data with a valid ID
    - Request:
      - URL: https://gorest.co.in/public/v2/users/7177340
@@ -212,7 +212,7 @@ Testing is carried out with the following steps:
    - Conclusion: Positive testing was successful. Delete user data has been successfully with a valid ID.
 
 ## Negatif Testing
-1. GET Request
+**1. GET Request**
    - Goal: Get all users based on not valid URL.
    - Request:
      - URL: https://gorest.co.in/public/v5/users
@@ -244,9 +244,9 @@ Testing is carried out with the following steps:
     </script>
 </head>
 ```
-      - Conclusion: Negative testing was successful. create a new user has been successfully with not a valid body.
+   - Conclusion: Negative testing was successful. create a new user has been successfully with not a valid body.
 
-2. POST
+**2. POST Request**
    - Goal: create a new user with not a valid body.
    - Request:
      - URL: https://gorest.co.in/public/v2/users
@@ -282,7 +282,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Negative testing was successful. Create a new user has been succeessfully with not a valid body.
 
-3. GET Request
+**3. GET Request**
    - Goal: Get a user based on not valid ID.
    - Request:
      - URL: https://gorest.co.in/public/v2/users/123
@@ -298,7 +298,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Negative testing was successful. Get a user based on not valid ID has been succeessfully.
 
-4. PUT Request
+**4. PUT Request**
    - Goal: Update user data with empty value
    - Request:
      - URL: https://gorest.co.in/public/v2/users/7167764
@@ -320,7 +320,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Negative testing was successful. Updated user data with empty value has been succeessfully.
 
-5. PATCH Request
+**5. PATCH Request**
    - Goal: Update user data with empty values on two request parameters
    - Request:
      - URL: https://gorest.co.in/public/v2/users/7141118
@@ -343,7 +343,7 @@ Testing is carried out with the following steps:
 ```
    - Conclusion: Negative testing was successful. Update user data with empty values on two request parameters hasbeen successfully.
 
-5. DELETE Request
+**5. DELETE Request**
    - Goal: Delete user with non available ID
    - Request:
      - URL: https://gorest.co.in/public/v2/users/7167764
