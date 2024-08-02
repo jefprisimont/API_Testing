@@ -120,7 +120,7 @@ Testing is carried out with the following steps:
         "status": "active"
        }
 ```
-   - Conclusion: Positive testing was successful. New user data has been successfully create with ID.
+   - Conclusion: Positive testing was successful. New user data has been successfully created with valid data.
 
 **3. GET Request**
    - Goal: Get a user based on a valid ID.
@@ -244,7 +244,7 @@ Testing is carried out with the following steps:
     </script>
 </head>
 ```
-   - Conclusion: Negative testing was successful. create a new user has been successfully with not a valid body.
+   - Conclusion: Negative testing was successful. Get all users has been successfully with not a valid URL.
 
 **2. POST Request**
    - Goal: create a new user with not a valid body.
@@ -341,7 +341,7 @@ Testing is carried out with the following steps:
    "message": "Error occurred while parsing request parameters"
    }
 ```
-   - Conclusion: Negative testing was successful. Update user data with empty values on two request parameters hasbeen successfully.
+   - Conclusion: Negative testing was successful. Update user data with empty values on two request parameters has been successfully.
 
 **5. DELETE Request**
    - Goal: Delete user with non available ID
